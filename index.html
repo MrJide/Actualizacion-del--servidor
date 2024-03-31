@@ -1,74 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>EhhterCrafters</title>
-    <!-- Meta tag Keywords -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <!--//Style-CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xD no se</title>
+    <meta name="theme-color" content="#db34eb">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="Coming-block">
 
-        <div class="page">
-
+    <div style="display: flex; justify-content: center;">
+        <div class="gradientBallContainer">
+            <div class="gradientBall"></div>
+            <div class="gradientBall2"></div>
         </div>
-        <div class="content">
-            <div class="logo">
-                
-                <a class="brand-logo" href="#index.html">
-                    <img src="images/minecraft_title (1).png" style="height:135px;" />
-                </a> 
-            </div>
-            <div class="w3l-coming-soon-page">
-                <div class="coming-block">
-                    <h1>Novedades destacadas</h1>
-                    <p>Estamos preparando cosas increibles para Ustedes! Att: Qwenten</p>
-                    <a href="https://discord.gg/qASBvrWV" class="home">Discord</a>
-                    <a href="https://www.facebook.com/EhtterCrafters" class="home">Pagina de Facebook</a>
-                </div>
-            </div>
-        </div>
-		
-        <script src="js/jquery-3.3.1.min.js"></script>
-        
-        <script>
-            var lFollowX = 0,
-                lFollowY = 0,
-                x = 0,
-                y = 0,
-                friction = 1 / 30;
-
-            function animate() {
-                x += (lFollowX - x) * friction;
-                y += (lFollowY - y) * friction;
-
-                translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-
-                $('.page').css({
-                    '-webit-transform': translate,
-                    '-moz-transform': translate,
-                    'transform': translate
-                });
-
-                window.requestAnimationFrame(animate);
-            }
-
-            $(window).on('mousemove click', function (e) {
-
-                var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-                var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
-                lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
-                lFollowY = (10 * lMouseY) / 100;
-
-            });
-
-            animate();
-        </script>
     </div>
+    
+    <div class="backgroundFront"></div>
+    <div class="center" style="display: flex; justify-content: center;">
+        <div class="card">
+            <div class="title">Network de angel xd</div>
+            <div class="subtitle">Pronto</div>
+            <!--aqui puedes poner el link del server de discord-->
+            <a class="button" href ="https://Youtube.com">Youtube</a>
+        </div>
+    </div>
+    
 </body>
-
 </html>
